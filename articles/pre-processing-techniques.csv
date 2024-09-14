@@ -1,0 +1,17 @@
+Technique,Article [1],Article [2],Article [5],Article [6],Article [8],Article [12],Article [13],Article [15],Article [18],Article [19],Article [20],Article [21],Article [22],Article [23] 
+Color histogram,+,-,-,-,-,-,-,-,-,-,-,-,-,-
+Resize,-,+,+,-,+,-,-,+,-,-,+,+,-,+
+Hair removal,-,+,-,-,-,-,-,-,-,-,-,-,-,-
+Gaussian filter,-,+,-,+,-,-,-,-,-,-,+,-,+,+
+Adaptive median filter,-,-,+,-,-,-,-,-,-,-,-,-,-,-
+Grayscale,-,-,+,-,-,-,+,-,-,+,-,-,-,-
+Median filter,-,-,-,+,-,-,-,-,-,+,-,-,-,-
+Contrast enhancement,-,-,-,+,-,+,-,-,-,-,-,-,-,-
+Region of interest,-,-,-,+,-,-,-,-,-,-,-,-,-,-
+Background masking,-,-,-,-,+,-,-,-,-,-,-,-,-,-
+Noise removal*,-,-,-,-,-,-,-,-,+,-,-,-,-,-
+Sharpening,-,-,-,-,-,-,-,-,-,+,-,-,-,-
+Bilateral smooth filter,-,-,-,-,-,-,-,-,-,+,-,-,-,-
+Binary mask,-,-,-,-,-,-,-,-,-,+,-,-,-,-
+Erosion,-,-,-,-,-,-,-,-,-,-,-,-,+,-
+Dilation,-,-,-,-,-,-,-,-,-,+,-,-,+,-

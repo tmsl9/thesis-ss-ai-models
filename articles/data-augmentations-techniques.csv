@@ -1,0 +1,12 @@
+Technique,Article [7],Article [10],Article [12],Article [21],Article [23]
+Cropping,+,-,-,-,+
+Rotating,+,+,+,+,+
+Scaling,+,-,-,+,-
+Translation,+,-,+,-,-
+Brightening,+,+,+,+,-
+Flipping,-,+,+,+,+
+Contrast adjustment,-,+,-,-,-
+Sharpness adjustment,-,+,-,-,-
+Gaussian filtering,-,+,-,-,-
+Shear transforming,-,-,+,+,-
+Zooming,-,-,+,+,-

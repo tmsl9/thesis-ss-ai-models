@@ -1,0 +1,230 @@
+{
+    "PRECISION": [
+        {
+            "value": "1.0",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "63",
+            "PREPROCESSING": "background masking",
+            "AUGMENTATIONS": "no",
+            "PREDICT_IMAGES": "7"
+        },
+        {
+            "value": "0.999",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "resize 720x720 & background masking",
+            "AUGMENTATIONS": "no",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "0.999",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "background masking",
+            "AUGMENTATIONS": "no",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "0.999",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "resize 640x640 & background masking",
+            "AUGMENTATIONS": "no",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "0.999",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "resize 640x640 & background masking",
+            "AUGMENTATIONS": "flip horizontal vertical & 2x",
+            "PREDICT_IMAGES": "5"
+        }
+    ],
+    "RECALL": [
+        {
+            "value": "1.0",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "gaussian filter",
+            "AUGMENTATIONS": "no",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "1.0",
+            "MODEL": "DeepLabv3plus",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "bilateral smooth filter 9 75 75",
+            "AUGMENTATIONS": "scale & 2x",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "1.0",
+            "MODEL": "DeepLabv3plus",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "bilateral smooth filter 15 100 100",
+            "AUGMENTATIONS": "crop & 2x",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "1.0",
+            "MODEL": "DeepLabv3plus",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "bilateral smooth filter 9 75 75",
+            "AUGMENTATIONS": "translate & 2x",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "1.0",
+            "MODEL": "DeepLabv3plus",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "bilateral smooth filter 15 100 100",
+            "AUGMENTATIONS": "scale & 2x",
+            "PREDICT_IMAGES": "5"
+        }
+    ],
+    "F1_SCORE": [
+        {
+            "value": "0.889",
+            "MODEL": "FCN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "bilateral smooth filter 15 100 100",
+            "AUGMENTATIONS": "translate & 2x",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "0.885",
+            "MODEL": "UNet",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "bilateral smooth filter 9 75 75",
+            "AUGMENTATIONS": "crop & 2x",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "0.884",
+            "MODEL": "UNet",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "bilateral smooth filter 15 100 100",
+            "AUGMENTATIONS": "crop & 2x",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "0.88",
+            "MODEL": "SegNet",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "bilateral smooth filter 9 75 75",
+            "AUGMENTATIONS": "translate & 2x",
+            "PREDICT_IMAGES": "5"
+        },
+        {
+            "value": "0.88",
+            "MODEL": "UNet",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "45",
+            "PREPROCESSING": "bilateral smooth filter 9 75 75",
+            "AUGMENTATIONS": "scale & 2x",
+            "PREDICT_IMAGES": "5"
+        }
+    ],
+    "PREDICT_TIME_PER_IMAGE": [
+        {
+            "value": "0.071",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "63",
+            "PREPROCESSING": "bilateral smooth filter 15 100 100",
+            "AUGMENTATIONS": "gaussian blur & 2x",
+            "PREDICT_IMAGES": "7"
+        },
+        {
+            "value": "0.072",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "63",
+            "PREPROCESSING": "adaptive median filter 3",
+            "AUGMENTATIONS": "translate & 2x",
+            "PREDICT_IMAGES": "7"
+        },
+        {
+            "value": "0.074",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "63",
+            "PREPROCESSING": "grayscale & sharpening & adaptive median filter 3 & bilateral smooth filter 9 75 75",
+            "AUGMENTATIONS": "flip horizontal vertical & 2x",
+            "PREDICT_IMAGES": "7"
+        },
+        {
+            "value": "0.074",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "63",
+            "PREPROCESSING": "resize 720x720 & adaptive median filter 3 & grayscale",
+            "AUGMENTATIONS": "flip horizontal vertical & 2x",
+            "PREDICT_IMAGES": "7"
+        },
+        {
+            "value": "0.076",
+            "MODEL": "Mask RCNN",
+            "EPOCHS": "50",
+            "LEARNING_RATE": "0.0001",
+            "TRAINING_IMGSIZE": "480x480",
+            "TOTAL_IMAGES": "63",
+            "PREPROCESSING": "no",
+            "AUGMENTATIONS": "flip horizontal vertical & 2x",
+            "PREDICT_IMAGES": "7"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+COUNT,MODEL,EPOCHS,LEARNING_RATE,TRAINING_IMGSIZE,TOTAL_IMAGES,PREPROCESSING,AUGMENTATIONS,PREDICT_IMAGES,PRECISION,RECALL,F1_SCORE,PREDICT_TIME_PER_IMAGE
+1,Mask RCNN,50,0.0001,480x480,63,background masking,no,7,1.0 (1),0.173,0.295,1.016
+1,Mask RCNN,50,0.0001,480x480,45,resize 720x720 & background masking,no,5,0.999 (2),0.194,0.325,0.128
+1,Mask RCNN,50,0.0001,480x480,45,background masking,no,5,0.999 (3),0.19,0.319,1.142
+1,Mask RCNN,50,0.0001,480x480,45,resize 640x640 & background masking,no,5,0.999 (4),0.19,0.319,0.107
+1,Mask RCNN,50,0.0001,480x480,45,resize 640x640 & background masking,flip horizontal vertical & 2x,5,0.999 (5),0.186,0.314,0.111
+1,Mask RCNN,50,0.0001,480x480,45,gaussian filter,no,5,0.084,1.0 (1),0.155,0.113
+1,DeepLabv3plus,50,0.0001,480x480,45,bilateral smooth filter 9 75 75,scale & 2x,5,0.061,1.0 (2),0.115,1.165
+1,DeepLabv3plus,50,0.0001,480x480,45,bilateral smooth filter 15 100 100,crop & 2x,5,0.053,1.0 (3),0.101,1.984
+1,DeepLabv3plus,50,0.0001,480x480,45,bilateral smooth filter 9 75 75,translate & 2x,5,0.046,1.0 (4),0.088,1.192
+1,DeepLabv3plus,50,0.0001,480x480,45,bilateral smooth filter 15 100 100,scale & 2x,5,0.024,1.0 (5),0.047,0.721
+1,FCN,50,0.0001,480x480,45,bilateral smooth filter 15 100 100,translate & 2x,5,0.851,0.93,0.889 (1),0.215
+1,UNet,50,0.0001,480x480,45,bilateral smooth filter 9 75 75,crop & 2x,5,0.881,0.889,0.885 (2),4.948
+1,UNet,50,0.0001,480x480,45,bilateral smooth filter 15 100 100,crop & 2x,5,0.879,0.89,0.884 (3),5.01
+1,SegNet,50,0.0001,480x480,45,bilateral smooth filter 9 75 75,translate & 2x,5,0.882,0.878,0.88 (4),0.881
+1,UNet,50,0.0001,480x480,45,bilateral smooth filter 9 75 75,scale & 2x,5,0.871,0.889,0.88 (5),0.133
+1,Mask RCNN,50,0.0001,480x480,63,bilateral smooth filter 15 100 100,gaussian blur & 2x,7,0.795,0.798,0.796,0.071 (1)
+1,Mask RCNN,50,0.0001,480x480,63,adaptive median filter 3,translate & 2x,7,0.755,0.832,0.792,0.072 (2)
+1,Mask RCNN,50,0.0001,480x480,63,grayscale & sharpening & adaptive median filter 3 & bilateral smooth filter 9 75 75,flip horizontal vertical & 2x,7,0.433,0.962,0.597,0.074 (3)
+1,Mask RCNN,50,0.0001,480x480,63,resize 720x720 & adaptive median filter 3 & grayscale,flip horizontal vertical & 2x,7,0.578,0.805,0.673,0.074 (4)
+1,Mask RCNN,50,0.0001,480x480,63,no,flip horizontal vertical & 2x,7,0.891,0.509,0.648,0.076 (5)
