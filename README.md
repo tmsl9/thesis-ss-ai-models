@@ -101,17 +101,17 @@ yolo task=detect mode=predict model=yolov8n.pt source='https://ultralytics.com/i
 
 # Run
 
-## Download the datasets
-```bash
-python3 download_all_datasets.py
-```
-
 ## Run the manual data augmentations in the datasets
 ```bash
 python3 data_augmentations/contrast_enhancement.py
+python3 data_augmentations/contrast_enhancement__scale__sharp__translate__zoom_in.py
+python3 data_augmentations/contrast_enhancement__sharpness.py
 python3 data_augmentations/scale.py
+python3 data_augmentations/scale__translate.py
+python3 data_augmentations/scale__zoom_in.py
 python3 data_augmentations/sharp.py
 python3 data_augmentations/translate.py
+python3 data_augmentations/translate__zoom_in.py
 python3 data_augmentations/zoom_in.py
 ```
 
