@@ -160,7 +160,7 @@ cython_debug/
 #.idea/
 
 # Customized
-best_ai_models/*
+best_trained_ai_model/*
 datasets/*
 results/**/runs/
 results/**/*.jpg
